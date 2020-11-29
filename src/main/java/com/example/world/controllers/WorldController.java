@@ -1,12 +1,8 @@
 package com.example.world.controllers;
 
-import com.example.world.exceptions.custom.NotFoundException;
 import com.example.world.services.WorldService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/")

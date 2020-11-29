@@ -3,7 +3,8 @@ package com.example.world.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "country", schema = "public")
+@Table(name = "country", schema = "public",
+        indexes = @Index(name = "idx_country_name", columnList = "name", unique = true))
 public class Country {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
